@@ -1,40 +1,40 @@
 Install Symfony
 ===============
-~~~~
+`
 sudo mkdir -p /usr/local/bin
 sudo curl -LsS https://symfony.com/installer -o /usr/local/bin/symfony
 sudo chmod a+x /usr/local/bin/symfony
 sudo apt-get install php-xml
 sudo apt-get install php7.0-intl
-~~~
+`
 
 what files I need to git ignore?
 
 
 Realtime ssh:
 ===========
-~~~
+`
 ssh -i "OpenfaceAWS.pem" ubuntu@ec2-54-67-28-176.us-west-1.compute.amazonaws.com
-~~
+`
 Installing postgres:
 ===========
-~~
+`
 su
 apt-get update
 apt-get install postgresql postgresql-server-dev-all
 su postgres
 psql
 >ALTER USER postgres WITH PASSWORD 'student';
-~~
+`
 How to import new DB to psql:
 ===========
-~~~
+`
 http://www.postgresqltutorial.com/postgresql-restore-database/
 in psql terminal:
 >psql -U username -f backupfile.sql
 
 >\dt to show all tables in current database
-~~~
+`
 How to kill a screen:
 ===========
 
@@ -48,7 +48,7 @@ xattr -rc /Applications/Hyper\ Light\ Drifter.app
 
 Callback in Node.js
 =====================
-~~~
+`
 dbConnection.js:
 
 var mysql = require('mysql');
@@ -69,14 +69,14 @@ exports.getUsers = function (callback) {
     });
 };
 
-~~~
+`
 The module would be called that way from a different node module:
 
 app.js:
-
+`
 var dbCon = require('./dbConnection.js');
 dbCon.getUsers(console.log);
-
+`
 
 Promise example
 ========
@@ -95,7 +95,7 @@ Your provided function is called by the underlying implementation and the functi
 Once you do your logic, you call one of these to either fullfill the Promise or reject it with an error
 This might seem like a lot so here is an actual example.
 
-~~~
+`
 exports.getUsers = function getUsers () {
   // Return the Promise right away, unless you really need to
   // do something before you create a new Promise, but usually
@@ -127,4 +127,4 @@ exports.getUsers()  // Returns a Promise!
   .catch(err => {
     // handle errors
   })
-~~~
+`
