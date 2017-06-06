@@ -26,7 +26,7 @@ set autoindent
 set tabstop=4
 syntax enable
 set number
-~~
+~~~
 
 Install Symfony
 ===============
