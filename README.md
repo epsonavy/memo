@@ -1,3 +1,36 @@
+my sublime setting
+===================
+~~~
+{
+  "ignored_packages":
+  [
+    "Vintage"
+  ],
+  "rulers":
+  [
+    80,
+    100,
+    120
+  ],
+  "translate_tabs_to_spaces": true,
+  "word_wrap": true,
+  "wrap_width": 80
+}
+
+~~~
+
+Vim setting
+===========
+~~~~
+vim ~/.vimrc
+
+set autoindent
+set tabstop=4
+syntax enable
+set number
+~~
+
+
 Install Symfony
 ===============
 ~~~
