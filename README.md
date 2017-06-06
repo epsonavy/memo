@@ -16,20 +16,17 @@ my sublime setting
   "word_wrap": true,
   "wrap_width": 80
 }
-
 ~~~
 
 Vim setting
 ===========
-~~~~
 vim ~/.vimrc
-
+~~~
 set autoindent
 set tabstop=4
 syntax enable
 set number
 ~~
-
 
 Install Symfony
 ===============
